@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    color: navy;
+}
+a{
+    color: orangered;
+    font-size: large;
+}
+
+label{
+    font-size: large;
+}
+
+span{
+    color: orangered;
+    font-size: large;
+}
+
+h1{
+    margin: 10px;
+}
+
+h2{
+    color: orangered;
+    margin-bottom: 20px;
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    font-size: large;
+    padding-left: 20px;
+    border-radius: 5px;
+    color: blueviolet;
+    background-color: white;
+    border: 2px solid blueviolet;
+}
+
+button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: blueviolet;
+    background-color: white;
+    border: 2px solid blueviolet;
+    margin-left: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.home-section, .signup-section, .delete-section{
+    display: none;
+}
+.delete-section button{
+    inline-size: 80%;
+    aspect-ratio: 2/1;
+    margin: 40px 20px 20px 20px;
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 10px 70px 10px;
+}
+
+#user, #bill, #meal{
+    font-size: xx-large;
+    margin: 5px;
+}
+.account-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+#add-meal{
+    inline-size: 80%;
+    aspect-ratio: 2/1;
+    color: green;
+    background-color: white;
+    border: 2px solid green;
+}
+
+#delete-meal, #reset-bill{
+    inline-size: 80%;
+    aspect-ratio: 2/1;
+    color: orangered;
+    background-color: white;
+    border: 2px solid orangered;
+}
+
+.extra-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    place-items: center;
+    gap: 5px;
+    margin: 40px 20px 70px 20px;
+}
+
+.extra-section input, .extra-section button{
+    inline-size: 80%;
+    aspect-ratio: 2/1;
+}
+
+#acc-delete{
+    color: orangered;
+    text-decoration: underline;
+    margin: 30px 20px 70px 20px;
+}

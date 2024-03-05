@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess Buddy</title>
+
+    <!-- Css File -->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+    <!-- Container -->
+    <div class="container">
+
+        <h1>Mess Buddy</h1>
+        <h3>Your meal partner, account manager.</h3>
+
+        <!-- Login Section -->
+        <div class="login-section">
+
+            <h2>Login to Meal Buddy</h2>
+
+            <div class="form">
+
+                <label for="login-user">User Name:</label>
+                <input type="text" id="login-user" minlength="3" autocomplete="off" placeholder="Abcde Xyz" required>
+
+                <label for="login-pass">Password:</label>
+                <input type="text" id="login-pass" minlength="4" autocomplete="off" placeholder="****" required>
+
+                <button type="button" onclick="login()">Login</button>
+
+                <p>Don't have account <span onclick="navSignup()">Sign Up.</span></p>
+
+            </div>
+
+        </div>
+
+        <!-- Signup Section -->
+        <div class="signup-section">
+
+            <h2>Sign Up to Meal Buddy</h2>
+
+            <div class="form">
+
+                <label for="signup-user">User Name:</label>
+                <input type="text" id="signup-user" minlength="3" autocomplete="off" placeholder="Abcde Xyz" required>
+
+                <label for="signup-pass">Password:</label>
+                <input type="text" id="signup-pass" minlength="4" autocomplete="off" placeholder="****" required>
+
+                <button type="button" onclick="signup()">Create</button>
+
+                <p>Have account <span onclick="navLogin()">Login.</span></p>
+
+            </div>
+
+        </div>
+
+        <!-- Account Delete Section -->
+        <div class="delete-section">
+
+            <h2>Delete My Meal Buddy Account</h2>
+
+            <div class="form">
+
+                <label for="delete-user">User Name:</label>
+                <input type="text" id="delete-user" minlength="3" autocomplete="off" placeholder="Abcde Xyz" required>
+
+                <label for="delete-pass">Password:</label>
+                <input type="text" id="delete-pass" minlength="4" autocomplete="off" placeholder="****" required>
+
+                <button type="button" onclick="deleteUser()">Delete</button>
+
+                <p>Have account <span onclick="navLogin()">Login.</span></p>
+
+            </div>
+
+        </div>
+
+        <!-- User Section -->
+        <div class="home-section">
+
+            <h3>User : <span id="user">Ankit Raj</span></h3>
+
+            <div class="account-section">
+
+                <h3>Bill : <span id="bill">1000</span></h3>
+                <h3>Meal : <span id="meal">10</span></h3>
+    
+                <button type="button" id="add-meal">Add Meal</button>
+                <button type="button" id="delete-meal">Delete Meal</button>
+
+            </div>
+
+            <div class="extra-section">
+
+                <label for="extra">Extra</label>
+
+                <input type="number" id="extra" minlength="1" placeholder="30" autocomplete="off" required>
+
+                <button type="button" id="add-extra">Add Extra Meal</button>
+
+            </div>
+
+            <button type="button" id="reset-bill">Reset Bill</button>
+
+            <p id="acc-delete" onclick="navDelete()">Delete my account.</p>
+
+        </div>
+
+        <p>Copyright © 2024, Meal Buddy.</p>
+        <h4>Powered By <a href="https://l1nk.dev/ankitraj">Ankit Raj.</a></h4>
+
+    </div>
+
+    <!-- Js File -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
